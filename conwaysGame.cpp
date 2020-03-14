@@ -17,14 +17,10 @@ void ConwayGame::InitCellGrid(){
     for(int j = 0; j < GridHeight; ++j){
         std::vector<bool> v;
         for(int i = 0; i < GridWidth; ++i){
-			v.push_back(0);//(((float)rand() / RAND_MAX) < threshold));
+			v.push_back((((float)rand() / RAND_MAX) < threshold));
         }
         cellGrid.push_back(v);
     }
-    cellGrid[25][25] = 1;
-    cellGrid[25][26] = 1;
-    cellGrid[24][25] = 1;
-    cellGrid[26][26] = 0;
     cellGrid.shrink_to_fit();
 }
 

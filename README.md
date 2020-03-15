@@ -10,3 +10,5 @@ REQUIREMENTS
 -- libglfw
 
 -- libglew
+
+![](sim.gif)
